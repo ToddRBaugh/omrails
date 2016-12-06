@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :tweets
   root 'pages#home'
   devise_for :users
   get 'about' => 'pages#about'
